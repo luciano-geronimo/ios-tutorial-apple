@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TutorialAppleFoodTracker/ViewController.swift"
-            timestampString = "580861112.730014"
+            timestampString = "580865746.64068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TutorialAppleFoodTracker/RatingControl.swift"
-            timestampString = "580861112.730106"
+            timestampString = "580865746.6407779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "setupButtons()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,27 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TutorialAppleFoodTracker/RatingControl.swift"
-            timestampString = "580861112.730615"
+            timestampString = "580865746.641318"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "setupButtons()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TutorialAppleFoodTracker/RatingControl.swift"
-            timestampString = "580861112.730965"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "setupButtons()"
             landmarkType = "7">
          </BreakpointContent>
