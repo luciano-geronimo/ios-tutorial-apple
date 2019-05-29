@@ -1,6 +1,7 @@
 import UIKit
 
-class RatingControl: UIStackView {
+
+@IBDesignable class RatingControl: UIStackView {
     private var ratingButtons = [UIButton]()
     var rating = 0
     
