@@ -13,6 +13,7 @@
 		0E09BB93229754B0001F780B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E09BB92229754B0001F780B /* Assets.xcassets */; };
 		0E09BB96229754B0001F780B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E09BB94229754B0001F780B /* LaunchScreen.storyboard */; };
 		0E09BBA1229754B0001F780B /* TutorialAppleFoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E09BBA0229754B0001F780B /* TutorialAppleFoodTrackerTests.swift */; };
+		0E09BBAC229ED27D001F780B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E09BBAB229ED27D001F780B /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0E09BB9C229754B0001F780B /* TutorialAppleFoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorialAppleFoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E09BBA0229754B0001F780B /* TutorialAppleFoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAppleFoodTrackerTests.swift; sourceTree = "<group>"; };
 		0E09BBA2229754B0001F780B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E09BBAB229ED27D001F780B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				0E09BB8B229754AE001F780B /* AppDelegate.swift */,
 				0E09BB8D229754AE001F780B /* ViewController.swift */,
 				0E09BB8F229754AE001F780B /* Main.storyboard */,
+				0E09BBAB229ED27D001F780B /* RatingControl.swift */,
 				0E09BB92229754B0001F780B /* Assets.xcassets */,
 				0E09BB94229754B0001F780B /* LaunchScreen.storyboard */,
 				0E09BB97229754B0001F780B /* Info.plist */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E09BB8E229754AE001F780B /* ViewController.swift in Sources */,
+				0E09BBAC229ED27D001F780B /* RatingControl.swift in Sources */,
 				0E09BB8C229754AE001F780B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

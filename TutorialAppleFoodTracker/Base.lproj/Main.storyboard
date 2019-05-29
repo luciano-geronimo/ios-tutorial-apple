@@ -53,11 +53,18 @@
                                     <constraint firstAttribute="trailing" secondItem="zKB-gT-um3" secondAttribute="trailing" id="g8R-3D-PPX"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVE-1K-23q" customClass="RatingControl" customModule="TutorialAppleFoodTracker" customModuleProvider="target">
+                                <rect key="frame" x="8" y="509" width="359" height="150"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5sc-rm-Gvg" secondAttribute="trailing" constant="8" id="71u-aN-Ej6"/>
+                            <constraint firstItem="uVE-1K-23q" firstAttribute="top" secondItem="5sc-rm-Gvg" secondAttribute="bottom" constant="25.5" id="75d-Li-5K5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uVE-1K-23q" secondAttribute="bottom" constant="8" id="9bk-wk-Hqm"/>
                             <constraint firstItem="5sc-rm-Gvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="CR8-aD-zDI"/>
+                            <constraint firstItem="uVE-1K-23q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Jad-Ph-Eqx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uVE-1K-23q" secondAttribute="trailing" constant="8" id="Otk-09-jNt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5sc-rm-Gvg" secondAttribute="trailing" constant="8" id="P8b-6w-g3O"/>
                             <constraint firstItem="5sc-rm-Gvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="WBa-dp-dmh"/>
                             <constraint firstItem="5sc-rm-Gvg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="bSK-fM-EYl"/>
