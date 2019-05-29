@@ -18,17 +18,18 @@ class RatingControl: UIStackView {
         
         button.translatesAutoresizingMaskIntoConstraints = false
         let horizontalConstraint = NSLayoutConstraint(item: button,
-                                                      attribute: NSLayoutConstraint.Attribute.centerX,
+                                                      //attribute: NSLayoutConstraint.Attribute.centerX,
+                                                      attribute: NSLayoutConstraint.Attribute.leading,
                                                       relatedBy: NSLayoutConstraint.Relation.equal,
                                                       toItem: self,
-                                                      attribute: NSLayoutConstraint.Attribute.centerX,
+                                                      attribute: NSLayoutConstraint.Attribute.leading,
                                                       multiplier: 1,
                                                       constant: 0)
         let verticalConstraint = NSLayoutConstraint(item: button,
-                                                    attribute: NSLayoutConstraint.Attribute.centerY,
+                                                    attribute: NSLayoutConstraint.Attribute.top,
                                                     relatedBy: NSLayoutConstraint.Relation.equal,
                                                     toItem: self,
-                                                    attribute: NSLayoutConstraint.Attribute.centerY,
+                                                    attribute: NSLayoutConstraint.Attribute.top,
                                                     multiplier: 1,
                                                     constant: 0)
         let widthConstraint = NSLayoutConstraint(item: button,
@@ -37,14 +38,14 @@ class RatingControl: UIStackView {
                                                  toItem: nil,
                                                  attribute: NSLayoutConstraint.Attribute.notAnAttribute,
                                                  multiplier: 1,
-                                                 constant: 100)
+                                                 constant: 44.0)
         let heightConstraint = NSLayoutConstraint(item: button,
                                                   attribute: NSLayoutConstraint.Attribute.height,
                                                   relatedBy: NSLayoutConstraint.Relation.equal,
                                                   toItem: nil,
                                                   attribute: NSLayoutConstraint.Attribute.notAnAttribute,
                                                   multiplier: 1,
-                                                  constant: 100)
+                                                  constant: 44.0)
         self.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
     }
 }
