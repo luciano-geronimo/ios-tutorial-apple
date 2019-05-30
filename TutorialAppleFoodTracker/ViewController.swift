@@ -58,12 +58,5 @@ class ViewController: UIViewController,
         mealName.text = textField.text
     }
     
-    //MARK: Actions
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealName.text = "Default text"
-    }
-    
-
-
 }
 

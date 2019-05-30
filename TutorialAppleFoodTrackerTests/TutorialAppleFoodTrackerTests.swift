@@ -1,34 +1,23 @@
-//
-//  TutorialAppleFoodTrackerTests.swift
-//  TutorialAppleFoodTrackerTests
-//
-//  Created by LUCIANO G LISBOA on 23/05/19.
-//  Copyright © 2019 LUCIANO G LISBOA. All rights reserved.
-//
-
 import XCTest
 @testable import TutorialAppleFoodTracker
 
 class TutorialAppleFoodTrackerTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testMealInitializationSucceeds(){
+        //testa caso de rating = 0
+        let zeroRatingMeal = Meal.init(name: "zero", photo: nil, rating: 0)
+        XCTAssertNotNil(zeroRatingMeal)
+        //testa a maior nota possivel
+        let positiveRetingMeal = Meal.init(name: "max", photo: nil, rating: 5)
+        XCTAssertNotNil(positiveRetingMeal)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testMealInitializationFails(){
+        let negativeRating = Meal.init(name: "neg", photo: nil, rating: -1)
+        XCTAssertNil(negativeRating)
+        let noName = Meal.init(name: "", photo: nil, rating: 0)
+        XCTAssertNil(noName)
+        let beyondMax = Meal.init(name:"toobig", photo:  nil, rating: 6)
+        XCTAssertNil(beyondMax)
     }
 
 }
