@@ -16,6 +16,7 @@ class ViewController: UIViewController,
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealName: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
     //Relativo ao UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
