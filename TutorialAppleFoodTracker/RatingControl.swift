@@ -2,6 +2,17 @@ import UIKit
 
 
 @IBDesignable class RatingControl: UIStackView {
+    @IBInspectable var starSize: CGSize = CGSize(width: 44.0, height: 44.0) {
+        didSet{
+            setupButtons()
+        }
+    }
+    @IBInspectable var starCount: Int = 5 {
+        didSet {
+            setupButtons()
+        }
+    }
+    
     private var ratingButtons = [UIButton]()
     var rating = 0
     
@@ -53,20 +64,26 @@ import UIKit
                                                  toItem: nil,
                                                  attribute: NSLayoutConstraint.Attribute.notAnAttribute,
                                                  multiplier: 1,
-                                                 constant: 44.0)
+                                                 constant: starSize.width)
         let heightConstraint = NSLayoutConstraint(item: button,
                                                   attribute: NSLayoutConstraint.Attribute.height,
                                                   relatedBy: NSLayoutConstraint.Relation.equal,
                                                   toItem: nil,
                                                   attribute: NSLayoutConstraint.Attribute.notAnAttribute,
                                                   multiplier: 1,
-                                                  constant: 44.0)
+                                                  constant: starSize.height)
         self.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
         
     }
     
     private func setupButtons(){
-        for _ in 0..<5 {
+        for btn in ratingButtons {
+            
+            //removeArrangedSubview(btn)
+            btn.removeFromSuperview()
+        }
+        ratingButtons.removeAll()
+        for _ in 0..<starCount {
             let button = UIButton()
             button.backgroundColor = UIColor.red
             addSubview(button)
@@ -75,12 +92,13 @@ import UIKit
                          for: .touchUpInside)
             ratingButtons.append(button)
         }
-        setButtonConstraint(button: ratingButtons[0])
-        setButtonConstraint(button: ratingButtons[1], thingToBeAtLeft: ratingButtons[0])
-        setButtonConstraint(button: ratingButtons[2], thingToBeAtLeft: ratingButtons[1])
-        setButtonConstraint(button: ratingButtons[3], thingToBeAtLeft: ratingButtons[2])
-        setButtonConstraint(button: ratingButtons[4], thingToBeAtLeft: ratingButtons[3])
+        for i in 0..<starCount {
+            if(i==0){
+                setButtonConstraint(button: ratingButtons[i])
+            }else{
+                setButtonConstraint(button: ratingButtons[i], thingToBeAtLeft: ratingButtons[i-1])
+            }
+        }
         
-
     }
 }
